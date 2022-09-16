@@ -211,7 +211,7 @@ justify-content: left;
      }
      @keyframes agrandar{
         from{
-            transform: scale(1.0);
+            transform: scale(2.1);
         }
         to{
             transform: scale(1.1);
