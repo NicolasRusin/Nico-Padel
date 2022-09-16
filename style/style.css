@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../Imagenes/fondo1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: Impact, Haettenschweiler,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+h2{
+    font-family: Impact, Haettenschweiler,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+.Inscripcion{
+    font-family: Impact, Haettenschweiler,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+}
+nav{
+    padding: 2rem;
+}
+.menu{
+margin: 15px;
+background-color: rgba(42, 42, 192, 0.5);
+text-align: center;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    background-color: black;
+    padding: 10px;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.menu li a:hover{
+color: yellow;
+font-weight: bold;
+}
+.IND{
+    background-color: white;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul li{
+    display: block;
+}
+ul li:hover ul{
+display: block;
+}
+.Torneos{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 1rem;
+    border: blue;
+}
+img{
+
+    opacity: .4;
+    border: 2px double white;
+}
+img:hover{
+    opacity: 1;
+    border: red;
+}
+h4{
+ text-align: center;
+}
+p{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+   display: flex;
+   justify-content: center;
+}
+h3{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+   text-align: left;
+}
+section a{
+justify-content: left;
+}
+.grid-container{
+    box-shadow: -1px 1px 7px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "main"
+    "Eventos"
+    "Torneos"
+    "footer";
+}
+.header {
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.Eventos{
+    grid-area: Eventos;
+}
+.Torneos{
+    grid-area: Torneos;
+}
+.footer{
+    grid-area: footer;
+}
+@media (min-width: 900px) {
+.grid-container{
+    grid-template: 
+    "header header header" 150px
+    "main main main" 100px
+    "Eventos Eventos Eventos" 100px
+    "Torneos Torneos Torneos" auto
+    "footer footer footer" 100px / 200px auto;
+    }
+}
+@media (min-width: 600px){
+    .grid-container{
+        grid-template:
+        "header header" 100px 
+        "main main" 50px
+        "Eventos Torneos" auto
+        "footer footer" 100px /
+        200px   auto;
+    }
+}
+.body1{
+    box-shadow: -1px 1px 7px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.body1{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header1"
+    "main1"
+    "Pal"
+    "footer1";
+}
+@media (min-width: 900px) {
+    .body1{
+        grid-template: 
+        "header1 header1"
+        "main1 main1 "
+        "Pal Pal"
+        "footer1 footer1";
+    }
+ }
+ .header1{
+    grid-area: header1;
+ }
+ .main1{
+    grid-area: main1;
+ }
+ .Pal{
+    grid-area: Pal;
+ }
+ .footer1{
+    grid-area: footer1;
+ }
+ .head{
+    text-align: center;
+ }
+ @media (min-width: 600px) {
+    .body1{
+        grid-template:
+        "header1 header1"
+        "main1 main1"
+        "Pal Pal"
+        "footer1 footer1" ;
+    }
+ }
+ img{
+    transition: 1s;
+ }
+ .WPP:hover{
+    transform: rotate(140deg) scale(2) skew(30deg);
+ }
+ footer{
+    transition: transform o.3s;
+     }
+     .WPP:hover {
+        transform: scale(1.1) translateY(-40);
+     }
+     .Torneos{
+        animation-name: agrandar;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+     }
+     @keyframes agrandar{
+        from{
+            transform: scale(1.0);
+        }
+        to{
+            transform: scale(1.1);
+        }
+     }

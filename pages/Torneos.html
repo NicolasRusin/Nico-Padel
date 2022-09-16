@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <header>
+        <h1>Eventos</h1>
+    </header>
+    <nav class="clase nav">
+        <ul class="menu">
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="">Indumentaria</a>
+                <ul class="IND">
+                    <li><a href="./indumentaria.html">Ropa</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./Paletas.html">Paletas</a>
+            </li>
+            <li>
+                <a href="quienes-somos.html">Quienes Somos</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+    <main>
+        <h2 class="Inscripcion">Anotate al torneo!</h2>
+        <div>
+            <label for="Name">Nombre completo jugador 1</label>
+        <input type="text" name="nombre" placeholder="Nicolas Rusin">
+        <br>
+        <label for="Name">Nombre completo jugador 2</label>
+        <input type="text" name="nombre" placeholder="Nicolas Rusin">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Numero de telefono</label>
+            <input type="text" required>
+        </div>
+        <br>
+        <div>
+            <label for="Categoria">Nivel
+                <select name="Categoria" id=""><option value="Cat1">C8/C9</option><option value="Cat2">C6/C7</option><option value="Cat3">C3/C4</option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <label for="Torneos">Seleccionar torneo
+                <select name="Categoria" id=""><option value="Tor1">Torneo Caballito</option><option value="Tor2">Torneo Palermo</option><option value="Tor3">Torneo Mar del plata</option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <label for="Pago">Metodo de Pago</label>
+            <input type="radio" name="Pago" value="Tr">Transeferencia
+            <input type="radio" name="Pago" value="Mp">Mercado Pago
+            <input type="radio" name="Pago" value="Ef">Efectivo
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">  
+            <input type="reset" value="Borrar">
+          </div>
+    </main>
+    <hr>
+    <footer>
+<a href="../index.html">VOLVER</a>
+    </footer>
+</body>
+</html>
