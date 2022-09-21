@@ -211,9 +211,15 @@ justify-content: left;
      }
      @keyframes agrandar{
         from{
-            transform: scale(2.1);
+            transform: scale(1.2);
         }
         to{
             transform: scale(1.1);
         }
+     }
+     .card-group img{
+        width: 200px;
+     }
+     .card-group a:hover{
+     border: blue;
      }
