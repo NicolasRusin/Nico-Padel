@@ -223,3 +223,6 @@ justify-content: left;
      .card-group a:hover{
      border: blue;
      }
+footer{
+    margin: auto;
+}
