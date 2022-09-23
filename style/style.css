@@ -91,105 +91,6 @@ h3{
 section a{
 justify-content: left;
 }
-.grid-container{
-    box-shadow: -1px 1px 7px black;
-    border-radius: 4px;
-    padding: 10px;
-    text-align: center;
-}
-.grid-container{
-    display: grid;
-    gap: 10px;
-    grid-template-areas:
-    "header"
-    "main"
-    "Eventos"
-    "Torneos"
-    "footer";
-}
-.header {
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.Eventos{
-    grid-area: Eventos;
-}
-.Torneos{
-    grid-area: Torneos;
-}
-.footer{
-    grid-area: footer;
-}
-@media (min-width: 900px) {
-.grid-container{
-    grid-template: 
-    "header header header" 150px
-    "main main main" 100px
-    "Eventos Eventos Eventos" 100px
-    "Torneos Torneos Torneos" auto
-    "footer footer footer" 100px / 200px auto;
-    }
-}
-@media (min-width: 600px){
-    .grid-container{
-        grid-template:
-        "header header" 100px 
-        "main main" 50px
-        "Eventos Torneos" auto
-        "footer footer" 100px /
-        200px   auto;
-    }
-}
-.body1{
-    box-shadow: -1px 1px 7px black;
-    border-radius: 4px;
-    padding: 10px;
-    text-align: center;
-}
-.body1{
-    display: grid;
-    gap: 10px;
-    grid-template-areas: 
-    "header1"
-    "main1"
-    "Pal"
-    "footer1";
-}
-@media (min-width: 900px) {
-    .body1{
-        grid-template: 
-        "header1 header1"
-        "main1 main1 "
-        "Pal Pal"
-        "footer1 footer1";
-    }
- }
- .header1{
-    grid-area: header1;
- }
- .main1{
-    grid-area: main1;
- }
- .Pal{
-    grid-area: Pal;
- }
- .footer1{
-    grid-area: footer1;
- }
- .head{
-    text-align: center;
- }
- @media (min-width: 600px) {
-    .body1{
-        grid-template:
-        "header1 header1"
-        "main1 main1"
-        "Pal Pal"
-        "footer1 footer1" ;
-    }
- }
  img{
     transition: 1s;
  }
@@ -221,11 +122,12 @@ justify-content: left;
         width: 200px;
      }
      .card-group a:hover{
-     border: blue;
+     opacity: 1;
      }
-footer{
-    margin: auto;
-}
+     footer{
+        height: auto;
+        margin: auto;
+     }
 .col img{
     width: 100px;
     animation-name: agrandar;
@@ -245,3 +147,44 @@ footer{
 .card-body img{
     width: 75px;
 }
+body{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "divtodos"
+    "main"
+    "footer";
+}
+header{
+    grid-area: header;
+}
+
+.divtodos{
+    grid-area: divtodos;
+}
+main{
+grid-area: main;
+}
+footer{
+grid-area: footer;
+}
+@media (min-width: 992px) {
+.grid-container{
+    grid-template: 
+    "header header header" 150px
+    "divtodos divtodos divtodos"100px
+    "main main main" 100px
+    "footer footer footer" 100px
+    }
+}
+@media (min-width: 576px){
+    .grid-container{
+        grid-template:
+        "header header" 100px 
+        "divtodos divtodos" auto
+        "main     main" 100px
+        "footer  footer" 100px /
+        200px   auto;
+    }
+    }
