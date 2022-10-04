@@ -1,0 +1,29 @@
+footer{
+    text-align: center;
+    div{
+        font-family: $font-family;
+        img{
+            @include tamanos(50px, 100px);
+            justify-content: center;
+            opacity: .4;
+            border: 2px double white;
+         &:hover{
+            border: $maincolor;
+         }
+        }
+    }
+}
+
+.foot1{
+@extend .divtodos;
+}
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+@mixin flex($direction, $justify, $aling){ 
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}

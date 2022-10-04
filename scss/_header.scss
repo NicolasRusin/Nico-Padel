@@ -1,0 +1,18 @@
+header{
+    font-family: $font-family;
+    h1{
+        font-family: Impact, Haettenschweiler,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+    }
+    h2{
+        font-family: Impact, Haettenschweiler,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+    }
+    a{
+        text-align: center;
+        color: $cool-red;
+        &:hover{
+            color: white;
+        }
+    }
+}

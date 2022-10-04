@@ -1,0 +1,56 @@
+main{
+    div{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        padding: 1rem;
+        border: blue;
+    img{
+        opacity: .4;
+        border: 2px double white;
+    &:hover{
+        opacity: 1;
+        border: red;
+      }
+     }  
+  }
+}
+main{
+    .Torneos{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        padding: 1rem;
+        border: blue;
+    img{
+        opacity: .4;
+        border: 2px double white;
+        &:hover{
+        opacity: 1;
+        border: red; 
+    }
+ }
+}
+} 
+main{
+    .Torneos{
+        animation-name: agrandar;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+     }
+     @keyframes agrandar{
+        from{
+            transform: scale(1.2);
+        }
+        to{
+            transform: scale(1.1);
+        }
+     }
+}
+main{
+    p{
+        @extend %subtexto
+    }
+}
