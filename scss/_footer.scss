@@ -1,9 +1,9 @@
 footer{
     text-align: center;
     div{
-        font-family: $font-family;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         img{
-            @include tamanos(50px, 100px);
+           width: 50px;
             justify-content: center;
             opacity: .4;
             border: 2px double white;
@@ -14,16 +14,12 @@ footer{
     }
 }
 
-.foot1{
-@extend .divtodos;
+footer{
+    img{
+        transition: 1s;
+     
+     &:hover{
+        transform: rotate(140deg) scale(2) skew(30deg);
+     }
 }
-@mixin tamanos($ancho, $alto) {
-    width: $ancho;
-    height: $alto;
-}
-@mixin flex($direction, $justify, $aling){ 
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $aling;
 }

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../Imagenes/fondo1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.divtodos h2 {
+  font-family: Impact, Haettenschweiler, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+
+main div {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding: 1rem;
+  border: blue;
+}
+main div img {
+  opacity: 0.4;
+  border: 2px double white;
+}
+main div img:hover {
+  opacity: 1;
+  border: red;
+}
+
+main .Torneos {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding: 1rem;
+  border: blue;
+}
+main .Torneos img {
+  opacity: 0.4;
+  border: 2px double white;
+}
+main .Torneos img:hover {
+  opacity: 1;
+  border: red;
+}
+
+header {
+  font-family: Impact;
+}
+header a {
+  text-align: center;
+  color: rgb(3, 3, 3);
+}
+header a:hover {
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+footer div {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+footer div img {
+  width: 50px;
+  justify-content: center;
+  opacity: 0.4;
+  border: 2px double white;
+}
+footer div img:hover {
+  border: blue;
+}
+
+footer img {
+  transition: 1s;
+}
+footer img:hover {
+  transform: rotate(140deg) scale(2) skew(30deg);
+}
+
+.col img {
+  width: 75px;
+}/*# sourceMappingURL=estilo.css.map */
