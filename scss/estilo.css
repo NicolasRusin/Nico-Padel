@@ -78,8 +78,44 @@ footer img {
 }
 footer img:hover {
   transform: rotate(140deg) scale(2) skew(30deg);
-}
-
-.col img {
-  width: 75px;
 }/*# sourceMappingURL=estilo.css.map */
+body{
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+  "head1"
+  "divtodos"
+  "fotopad"
+  "fotopad1"
+  "fotopad2"
+  "footer";
+}
+header{
+grid-area: head1;
+}
+.divtodos{
+  grid-area: divtodos;
+}
+.fotopad{
+  grid-area: fotopad;
+}
+.fotopad1{
+  grid-area: fotopad1;
+}
+.fotopad2{
+  grid-area: fotopad2;
+}
+footer{
+  grid-area: footer;
+}
+@media (min-width: 576px){
+   .body1{
+    grid-template:
+    "head1" 100px
+    "divtodos" auto
+    "fotopad" 50px
+    "fotopad1" 50px
+    "fotopad2" 50px
+    "footer" 100px / 200px  auto; 
+   }
+}
