@@ -1,0 +1,22 @@
+*{
+   
+}
+body{
+    background-image: url(../Imagenes/fondo1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.divtodos{
+    h2{
+        font-family: Impact, Haettenschweiler,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+    }
+}
+$maincolor: blue;
+$cool-red: rgb(3, 3, 3);
+$font-family: Impact;
+
+@import "main";
+@import "header";
+@import "footer";
+@import "Torneos";
