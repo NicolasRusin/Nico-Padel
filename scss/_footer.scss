@@ -1,0 +1,25 @@
+footer{
+    text-align: center;
+    div{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        img{
+           width: 50px;
+            justify-content: center;
+            opacity: .4;
+            border: 2px double white;
+         &:hover{
+            border: $maincolor;
+         }
+        }
+    }
+}
+
+footer{
+    img{
+        transition: 1s;
+     
+     &:hover{
+        transform: rotate(140deg) scale(2) skew(30deg);
+     }
+}
+}

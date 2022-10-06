@@ -1,5 +1,7 @@
 *{
    
+    margin: 0;
+    padding: 0;
 }
 body{
     background-image: url(../Imagenes/fondo1.webp);
@@ -20,3 +22,4 @@ $font-family: Impact;
 @import "header";
 @import "footer";
 @import "Torneos";
+
