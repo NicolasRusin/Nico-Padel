@@ -83,3 +83,13 @@ main{
         transform: scale(1.1);
     }
  }
+ .card-group a{
+    opacity: .2;
+    &:hover{
+        opacity: 1;
+        text-decoration-color: aliceblue;
+        background-color: aqua;
+    }
+ }
+ 
+ 

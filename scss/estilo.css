@@ -121,6 +121,16 @@ main .col img {
     transform: scale(1.1);
   }
 }
+.card-group a {
+  opacity: 0.2;
+}
+.card-group a:hover {
+  opacity: 1;
+  -webkit-text-decoration-color: aliceblue;
+          text-decoration-color: aliceblue;
+  background-color: aqua;
+}
+
 header {
   font-family: Impact;
 }
@@ -152,4 +162,22 @@ footer img {
 }
 footer img:hover {
   transform: rotate(140deg) scale(3) skew(30deg);
+}
+
+@media (max-width: 576px) {
+  .Torneos {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .card-group img {
+    width: 75px;
+  }
+}
+.slide {
+  margin-top: 10px;
+}
+.slide img {
+  height: 477px;
+  width: 1200px;
 }/*# sourceMappingURL=estilo.css.map */

@@ -1,1 +1,19 @@
+@media (max-width: 576px){
+    .Torneos{
+       flex-direction: column;
+    }
+}
 
+
+@media (max-width: 576px){
+    .card-group img{
+       width: 75px
+    }
+}
+.slide{
+    margin-top: 10px;
+    img{
+        height: 477px;
+        width: 1200px;
+    }
+}
