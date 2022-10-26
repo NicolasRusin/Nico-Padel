@@ -32,3 +32,54 @@ main{
  }
 }
 } 
+main{
+    .col img{
+        width: 100px;
+        animation-name: agrandar;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        @keyframes agrandar {
+            from{
+                transform: scale(1.2);
+            }
+            to{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.Torneos{
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+ }
+ @keyframes agrandar{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1.1);
+    }
+ }
+ .card-group img{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+ }
+ @keyframes agrandar{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1.1);
+    }
+ }

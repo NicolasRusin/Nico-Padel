@@ -6,7 +6,6 @@ footer{
            width: 50px;
             justify-content: center;
             opacity: .4;
-            border: 2px double white;
          &:hover{
             border: $maincolor;
          }
@@ -19,7 +18,7 @@ footer{
         transition: 1s;
      
      &:hover{
-        transform: rotate(140deg) scale(2) skew(30deg);
+        transform: rotate(140deg) scale(3) skew(30deg);
      }
 }
 }

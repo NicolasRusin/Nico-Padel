@@ -46,14 +46,89 @@ main .Torneos img:hover {
   border: red;
 }
 
+main .col img {
+  width: 100px;
+  -webkit-animation-name: agrandar;
+          animation-name: agrandar;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes agrandar {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes agrandar {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.Torneos {
+  -webkit-animation-name: agrandar;
+          animation-name: agrandar;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@keyframes agrandar {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.card-group img {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-name: agrandar;
+          animation-name: agrandar;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@keyframes agrandar {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
 header {
   font-family: Impact;
 }
-header a {
+header div a {
   text-align: center;
   color: rgb(3, 3, 3);
 }
-header a:hover {
+header div a:hover {
   color: white;
 }
 
@@ -67,7 +142,6 @@ footer div img {
   width: 50px;
   justify-content: center;
   opacity: 0.4;
-  border: 2px double white;
 }
 footer div img:hover {
   border: blue;
@@ -77,45 +151,5 @@ footer img {
   transition: 1s;
 }
 footer img:hover {
-  transform: rotate(140deg) scale(2) skew(30deg);
+  transform: rotate(140deg) scale(3) skew(30deg);
 }/*# sourceMappingURL=estilo.css.map */
-body{
-  display: grid;
-  gap: 10px;
-  grid-template-areas:
-  "head1"
-  "divtodos"
-  "fotopad"
-  "fotopad1"
-  "fotopad2"
-  "footer";
-}
-header{
-grid-area: head1;
-}
-.divtodos{
-  grid-area: divtodos;
-}
-.fotopad{
-  grid-area: fotopad;
-}
-.fotopad1{
-  grid-area: fotopad1;
-}
-.fotopad2{
-  grid-area: fotopad2;
-}
-footer{
-  grid-area: footer;
-}
-@media (min-width: 576px){
-   .body1{
-    grid-template:
-    "head1" 100px
-    "divtodos" auto
-    "fotopad" 50px
-    "fotopad1" 50px
-    "fotopad2" 50px
-    "footer" 100px / 200px  auto; 
-   }
-}
